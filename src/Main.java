@@ -14,7 +14,6 @@ public class Main {
 
         MessageUtil.messenger("Hello, Welcome \n");
         MessageUtil.messenger("Are you a seller or Buyer [B-Buyer/S-Seller]");
-
         userType = selectUserType.nextLine().toUpperCase();
 
         if (!userType.equals("")){
