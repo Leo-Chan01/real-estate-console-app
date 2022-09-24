@@ -4,11 +4,12 @@ public class House {
     int id;
     String houseName;
     String houseLocation;
-    int numberOfBedrooms, numberOfKitchens, numberOfBathrooms, numberOfSittingRooms, numberOfGarage;
+    int numberOfBedrooms, numberOfKitchens, numberOfBathrooms, numberOfSittingRooms, numberOfGarage, housePrice;
     Boolean isSwimmingPoolAvailable;
 
 
-    public House(int id, String houseName, String houseLocation, int numberOfBedrooms, int numberOfKitchens, int numberOfBathrooms, int numberOfSittingRooms, int numberOfGarage, Boolean isSwimmingPoolAvailable) {
+
+    public House(int id, String houseName, String houseLocation, int housePrice, int numberOfBedrooms, int numberOfKitchens, int numberOfBathrooms, int numberOfSittingRooms, int numberOfGarage, Boolean isSwimmingPoolAvailable) {
         this.id = id;
         this.houseName = houseName;
         this.houseLocation = houseLocation;
@@ -18,6 +19,7 @@ public class House {
         this.numberOfSittingRooms = numberOfSittingRooms;
         this.numberOfGarage = numberOfGarage;
         this.isSwimmingPoolAvailable = isSwimmingPoolAvailable;
+        this.housePrice = housePrice;
     }
 
     public int getId() {
@@ -90,5 +92,13 @@ public class House {
 
     public void setHouseLocation(String houseLocation) {
         this.houseLocation = houseLocation;
+    }
+
+    public int getHousePrice() {
+        return housePrice;
+    }
+
+    public void setHousePrice(int housePrice) {
+        this.housePrice = housePrice;
     }
 }
