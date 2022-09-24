@@ -1,5 +1,6 @@
 package utils;
 
+@SuppressWarnings("ALL")
 public class UserUtil {
     String userName, password;
 

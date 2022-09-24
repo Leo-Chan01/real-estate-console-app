@@ -1,5 +1,6 @@
 package models;
 
+@SuppressWarnings("ALL")
 public class House {
     int id;
     String houseName;
