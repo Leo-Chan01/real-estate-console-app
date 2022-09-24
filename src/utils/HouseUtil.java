@@ -8,19 +8,24 @@ import java.util.List;
 public class HouseUtil {
     public static List<House> getHouseList(){
         List<House> houses = new ArrayList<>();
-        houses.add(new House(1, "Tarila's House", "Akenfa", 3000000,2,
+        houses.add(new House(1, "Tarila's House", "Akenfa",
+                3000000,2,
                 1, 1, 2,
                 3, true));
-        houses.add(new House(2, "Ephraim's House", "Yenegwe", 10000000,6,
+        houses.add(new House(2, "Ephraim's House", "Yenegwe",
+                10000000,6,
                 4, 5, 4, 5,
                 false));
-        houses.add(new House(3, "Mr. Success' House", "Opolo", 5000000, 6,
+        houses.add(new House(3, "Mr. Success' House", "Opolo",
+                5000000, 6,
                 4, 5, 4, 5,
                 false));
-        houses.add(new House(4, "Mr Dubem's House", "Edepie", 9000000, 6,
+        houses.add(new House(4, "Mr Dubem's House", "Edepie",
+                9000000, 6,
                 4, 5, 4, 5,
                 false));
-        houses.add(new House(5, "Mr. John's House", "Okutukutu", 2550000,6,
+        houses.add(new House(5, "Mr. John's House", "Okutukutu",
+                2550000,6,
                 4, 5, 4, 5,
                 false));
         return houses;
@@ -34,7 +39,8 @@ public class HouseUtil {
 
     public static void displayInitializedStoredHouses(){
         for (House currentHouse : HouseUtil.getHouseList()) {
-            System.out.println(currentHouse.getId() + ". " + currentHouse.getHouseName() + " (" + currentHouse.getHousePrice() + ")");
+            System.out.println(currentHouse.getId() + ". " + currentHouse.getHouseName() +
+                    " (" + currentHouse.getHousePrice() + ")");
         }
     }
 }

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6a9d340-b677-46e0-be78-c0657b035d07" name="Changes" comment="Final Abstraction">
+    <list default="true" id="a6a9d340-b677-46e0-be78-c0657b035d07" name="Changes" comment="Added Buyer and Seller Logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/HouseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/HouseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/MessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MessageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/OrderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/OrderUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/UserUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/UserUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664031080138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Buyer and Seller Logic">
+      <created>1664048230124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664048230124</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +107,7 @@
     <MESSAGE value="Modification of Houseutil, MessageUtil, final MVP" />
     <MESSAGE value="Final touches" />
     <MESSAGE value="Final Abstraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Abstraction" />
+    <MESSAGE value="Added Buyer and Seller Logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Buyer and Seller Logic" />
   </component>
 </project>

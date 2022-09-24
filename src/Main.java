@@ -10,18 +10,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner selectUserType = new Scanner(System.in);
         String userType;
+        List<House> houseList = HouseUtil.getHouseList();
 
         MessageUtil.messenger("Hello, Welcome \n");
         MessageUtil.messenger("Are you a seller or Buyer [B-Buyer/S-Seller]");
 
-        List<House> houseList;
-        houseList = HouseUtil.getHouseList();
-
         userType = selectUserType.nextLine().toUpperCase();
+
         if (!userType.equals("")){
             if (userType.equals("B")){
-                MessageUtil.writeInstruction("Pick a House below, by it's House Number");
-                HouseUtil.displayInitializedStoredHouses();
                 OrderUtil.performHouseBuyingTransactions();
             } else if (userType.equals("S")) {
                 OrderUtil.performHouseListing(houseList);
