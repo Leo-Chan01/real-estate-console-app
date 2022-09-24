@@ -9,7 +9,8 @@ public class MessageUtil {
         System.out.println(instruction);
     }
 
-    public static void giveUserFeedback(String selectedHouseName, int housePrice){
-        System.out.println("You just purchased " + selectedHouseName + " at " + housePrice);
+    public static void giveUserFeedback(String selectedHouseName, int housePrice, boolean isListing){
+        String transactionType = isListing ? "Listed" : "Purchased";
+        System.out.println("You just " + transactionType + " "+ selectedHouseName + " at NGN" + housePrice);
     }
 }

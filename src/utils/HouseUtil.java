@@ -6,20 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HouseUtil {
-
-//    public static House[] getHouses(){
-//
-//        House[] housesArray = new House[]{
-//                new House(1, "Tarila's House", "Akenfa", 1000000,2,
-//                        1, 1, 2,
-//                        3, true),
-//                new House(2, "Ephraim's House", "Yenegwe", 1000000,6,
-//                        4, 5, 4, 5,
-//                        false)
-//        };
-//        return housesArray;
-//    }
-
     public static List<House> getHouseList(){
         List<House> houses = new ArrayList<>();
         houses.add(new House(1, "Tarila's House", "Akenfa", 3000000,2,
