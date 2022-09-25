@@ -18,7 +18,7 @@ public class Main {
 
         if (!userType.equals("")){
             if (userType.equals("B")){
-                OrderUtil.performHouseBuyingTransactions();
+                OrderUtil.performHouseBuyingTransactions(houseList);
             } else if (userType.equals("S")) {
                 OrderUtil.performHouseListing(houseList);
             }else {

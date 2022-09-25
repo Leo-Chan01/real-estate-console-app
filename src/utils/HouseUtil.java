@@ -37,8 +37,8 @@ public class HouseUtil {
         return singleHouse;
     }
 
-    public static void displayInitializedStoredHouses(){
-        for (House currentHouse : HouseUtil.getHouseList()) {
+    public static void displayInitializedStoredHouses(List<House> houseList){
+        for (House currentHouse : houseList) {
             System.out.println(currentHouse.getId() + ". " + currentHouse.getHouseName() +
                     " (" + currentHouse.getHousePrice() + ")");
         }

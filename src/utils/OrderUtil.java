@@ -6,16 +6,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class OrderUtil {
-    public static void performHouseBuyingTransactions() {
+    public static void performHouseBuyingTransactions(List<House> houseList) {
         MessageUtil.writeInstruction("Pick a House below, by it's House Number");
-        HouseUtil.displayInitializedStoredHouses();
+        HouseUtil.displayInitializedStoredHouses(houseList);
         Scanner selectHouse = new Scanner(System.in);
         Scanner makeDecision = new Scanner(System.in);
         int selection = selectHouse.nextInt();
-        House selectedHouse = HouseUtil.getSingleHouse(HouseUtil.getHouseList(), selection-1);
+        House selectedHouse = HouseUtil.getSingleHouse(houseList, selection-1);
         String houseName = selectedHouse.getHouseName();
         int housePrice = selectedHouse.getHousePrice();
-
         System.out.println("You selected " + houseName + " which costs: NGN " + housePrice
                 + ". Do you want to continue? [Y/N]");
         String userDecision = makeDecision.nextLine().toUpperCase();
@@ -28,7 +27,7 @@ public class OrderUtil {
                 MessageUtil.messenger("Thank you for your patronage");
             }else{
                 MessageUtil.messenger("Wrong input, please selected a House again: ");
-                performHouseBuyingTransactions();
+                performHouseBuyingTransactions(houseList);
             }
             makeDecision.close();
         }
@@ -73,7 +72,7 @@ public class OrderUtil {
         id = HouseUtil.getHouseList().size();
 
         try {
-            houseList.add(new House(id, houseName, houseLocation, housePrice,
+            houseList.add(new House(id+1, houseName, houseLocation, housePrice,
                     numberOfBedrooms, numberOfKitchens, numberOfBathrooms, numberOfSittingRooms, numberOfGarage,
                     isSwimmingPoolAvailable));
             House currentHouse = HouseUtil.getSingleHouse(houseList, id);
@@ -101,7 +100,7 @@ public class OrderUtil {
             MessageUtil.messenger("Choose B-Buy or S-Sell");
             boolean isBuying = takeDecision.next().equalsIgnoreCase("B");
             if (isBuying){
-                OrderUtil.performHouseBuyingTransactions();
+                OrderUtil.performHouseBuyingTransactions(houseList);
             }else {
                 OrderUtil.performHouseListing(houseList);
             }
