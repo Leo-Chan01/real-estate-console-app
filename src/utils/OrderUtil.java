@@ -108,4 +108,25 @@ public class OrderUtil {
             MessageUtil.messenger("Thank you for your business! See you later!");
         }
     }
+
+    public static void startTransaction(List<House> houseList) {
+        Scanner selectUserType = new Scanner(System.in);
+        String userType;
+
+        MessageUtil.messenger("Are you a seller or Buyer [B-Buyer/S-Seller]");
+        userType = selectUserType.nextLine().toUpperCase();
+
+        if (!userType.equals("")){
+            if (userType.equals("B")){
+                OrderUtil.performHouseBuyingTransactions(houseList);
+            } else if (userType.equals("S")) {
+                OrderUtil.performHouseListing(houseList);
+            }else {
+                MessageUtil.messenger("Wrong Input, please select one option above");
+                OrderUtil.startTransaction(houseList);
+            }
+        }else {
+            MessageUtil.messenger("Cannot have empty string. Exiting...");
+        }
+    }
 }
